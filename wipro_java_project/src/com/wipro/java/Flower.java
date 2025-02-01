@@ -8,19 +8,22 @@ package com.wipro.java;
  */
 public class Flower {
 
-	/**
-	 * 
-	 */
-	public Flower() {
-		// TODO Auto-generated constructor stub
+	String name;
+	String color;
+	int price;
+	
+	Flower(String name, String color, int price) {
+		this.name=name;
+		this.color=color;
+		this.price=price;
 	}
-
-	/**
-	 * @param args
-	 */
+    void display() {
+System.out.println("Flower name:"+name+"Color:"+color+"Price:"+price);
+    }
+    
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Flower flower = new Flower("Sunflower","Yellow",45);
+		flower.display();
 
 	}
-
 }
