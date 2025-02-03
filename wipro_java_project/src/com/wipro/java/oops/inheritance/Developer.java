@@ -1,4 +1,4 @@
-package com.wipro.java.oops;
+package com.wipro.java.oops.inheritance;
 
 public class Developer extends Employee {
 
@@ -12,6 +12,7 @@ public class Developer extends Employee {
 		employee.setName("priya");
 		employee.setDepartment("def");
 		employee.setSalary(34000f);
+		
 		
 		System.out.println(employee.getId());
 		System.out.println(employee.getName());
