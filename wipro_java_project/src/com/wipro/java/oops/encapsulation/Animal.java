@@ -16,11 +16,11 @@ public class Animal {
 	}
 	public void setWeight(int weight) {
 		
-		if(weight>80) {
+		if(weight>8 && weight<80) {
 			this.weight=weight;
 		}
 		else
-		System.out.println("Weight must be positive");
+		System.out.println("Weight must be appropriate");
 	}
 	public String getName() {
 		return name;
