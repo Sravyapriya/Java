@@ -8,11 +8,11 @@ public class Audi extends Car{
 	
 	public static void main(String [] args) {
 		
-		Car ferrariCar = new Audi();
-		ferrariCar.setName("Audi");
-		ferrariCar.setColor("Purple");
-		ferrariCar.setSpeed(200);
-		ferrariCar.showdetails();
+		Car AudiCar = new Audi();
+		AudiCar.setName("Audi");
+		AudiCar.setColor("Purple");
+		AudiCar.setSpeed(200);
+		AudiCar.showdetails();
 		
 	}
 
