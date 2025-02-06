@@ -38,7 +38,7 @@ class AnimalComparable implements Comparable<AnimalComparable> {
 		l.add(new AnimalComparable("Rabbit", 4));
 		
 		Collections.sort(l);
-		System.out.println("Movies after sorting by year:");
+		System.out.println("Animals after sorting by Age:");
 		for(AnimalComparable o1 : l) {
 			System.out.println(o1.getName()+" "+o1.getAge());
 	}
