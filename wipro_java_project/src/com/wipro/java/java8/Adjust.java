@@ -6,8 +6,7 @@ import java.time.temporal.TemporalAdjusters;
 
 public class Adjust  {
 	
-	public static void checkingAdjusters()
-	{
+	public static void checkingAdjusters(){
 		LocalDate date = LocalDate.now();
 		System.out.println("the current date is "+ 
 		                    date);
@@ -41,7 +40,6 @@ public class Adjust  {
 
 	public static void main(String[] args) {
 		 checkingAdjusters();
-
 	}
 }
 }
