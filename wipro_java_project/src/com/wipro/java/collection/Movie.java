@@ -1,6 +1,7 @@
 package com.wipro.java.collection;
-import java.util.*;
 
+import java.util.ArrayList;
+import java.util.Collections;
 
 //Movie class implements comparable
 //interface to define default sorting

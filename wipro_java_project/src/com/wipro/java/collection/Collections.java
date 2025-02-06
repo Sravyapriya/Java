@@ -4,8 +4,7 @@ import java.util.*;
 
 public class Collections {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		//ARRAY
 		
 		System.out.println("Array --------------- ");
