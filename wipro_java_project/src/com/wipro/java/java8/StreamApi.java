@@ -11,12 +11,12 @@ public class StreamApi {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		List<Integer> numbers = Arrays.asList(2,5,8,6,7);
+		List<Integer> numbers = Arrays.asList(2,5,8,7,9);
 		List<Integer> sortedNumbers = numbers.stream().sorted().collect(Collectors.toList());
 		
 		System.out.println(sortedNumbers);
 		
-		List<Integer> numbers1 = Arrays.asList(6,8,7,2,4);
+		List<Integer> numbers1 = Arrays.asList(6,8,7,3,5);
 		int min = numbers1.stream().min(Integer::compare).get();
 		int max = numbers1.stream().max(Integer::compare).get();
 		

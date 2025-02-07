@@ -6,7 +6,7 @@ public class StringApi {
 		// TODO Auto-generated constructor stub
 	}
     public static void main(String[] args) {
-    	String str = "Smru";
+    	String str = "Smruti";
     	System.out.println(str.length());
     	System.out.println(str.charAt(2));
     	System.out.println(str.substring(1,3));
