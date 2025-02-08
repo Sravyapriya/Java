@@ -15,15 +15,15 @@ public class EmployeeJunit {
     void setUp() {
         // Initialize a new EmployeeService instance before each test case
         service = new EmployeeService();
-        service.addEmployee(new Employee(1, "Prakhar", "IT", 60000, LocalDate.of(2022, 5, 10)));
-        service.addEmployee(new Employee(2, "Hriday", "HR", 50000, LocalDate.of(2021, 3, 15)));
+        service.addEmployee(new Employee(1, "Sravya", "IT", 60000, LocalDate.of(2022, 5, 10)));
+        service.addEmployee(new Employee(2, "Smru", "HR", 50000, LocalDate.of(2021, 3, 15)));
     }
 
     @Test
     //adding emp details
     void testAddEmployee() {
         int initialSize = service.getEmployees().size();
-        service.addEmployee(new Employee(3, "Alina", "Finance", 55000, LocalDate.of(2023, 6, 1)));
+        service.addEmployee(new Employee(3, "Sudhi", "Finance", 55000, LocalDate.of(2023, 6, 1)));
         assertEquals(initialSize + 1, service.getEmployees().size());
     }
 
@@ -46,7 +46,7 @@ public class EmployeeJunit {
     //updating salary for an emp
     public void testUpdateSalary() {
         EmployeeService service = new EmployeeService();
-        Employee emp = new Employee(1, "Alice", "IT", 50000, LocalDate.of(2020, 5, 10));
+        Employee emp = new Employee(1, "Rosh", "IT", 50000, LocalDate.of(2020, 5, 10));
         service.addEmployee(emp);
         service.updateSalary(1, 60000);
         Optional<Employee> result = service.searchEmployee(1);
@@ -65,7 +65,7 @@ public class EmployeeJunit {
     //sorting employees by their name
     void testSortByName() {
         List<Employee> sortedEmployees = service.sortByName();
-        assertEquals("Hriday", sortedEmployees.get(0).getEmpName());
-        assertEquals("Prakhar", sortedEmployees.get(1).getEmpName());
+        assertEquals("Sravya", sortedEmployees.get(0).getEmpName());
+        assertEquals("Smru", sortedEmployees.get(1).getEmpName());
     }
 }
